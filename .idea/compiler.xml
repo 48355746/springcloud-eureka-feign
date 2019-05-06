@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="zuul" />
         <module name="eurekafeignclient" />
         <module name="eventbus" />
         <module name="springcloud" />
@@ -24,6 +25,7 @@
       <module name="eurekafeignclient" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
       <module name="eventbus" options="-parameters" />
+      <module name="zuul" options="-parameters" />
     </option>
   </component>
 </project>

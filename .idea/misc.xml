@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/configcenter/pom.xml" />
         <option value="$PROJECT_DIR$/configclient/pom.xml" />
         <option value="$PROJECT_DIR$/eventbus/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul/pom.xml" />
       </list>
     </option>
   </component>
