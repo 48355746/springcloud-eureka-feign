@@ -6,18 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eurekaserver" />
-        <module name="eurekaclient" />
         <module name="eurekafeignclient" />
+        <module name="eventbus" />
         <module name="springcloud" />
+        <module name="configcenter" />
+        <module name="eurekaserver" />
+        <module name="configclient" />
+        <module name="eurekaclient" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="configcenter" options="-parameters" />
+      <module name="configclient" options="-parameters" />
       <module name="eurekaclient" options="-parameters" />
       <module name="eurekafeignclient" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
+      <module name="eventbus" options="-parameters" />
     </option>
   </component>
 </project>
