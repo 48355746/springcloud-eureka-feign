@@ -8,23 +8,33 @@
         <outputRelativeToContentRoot value="true" />
         <module name="zuul" />
         <module name="eurekafeignclient" />
+        <module name="consulconsumer" />
         <module name="eventbus" />
+        <module name="consulproducer" />
         <module name="springcloud" />
+        <module name="consulproducer (1)" />
         <module name="configcenter" />
         <module name="eurekaserver" />
         <module name="configclient" />
         <module name="eurekaclient" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zipkinserver" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="configcenter" options="-parameters" />
       <module name="configclient" options="-parameters" />
+      <module name="consulconsumer" options="-parameters" />
+      <module name="consulproducer" options="-parameters" />
+      <module name="consulproducer (1)" options="-parameters" />
       <module name="eurekaclient" options="-parameters" />
       <module name="eurekafeignclient" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
       <module name="eventbus" options="-parameters" />
+      <module name="zipkinserver" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>
