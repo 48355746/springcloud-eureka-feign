@@ -12,7 +12,9 @@
     <file url="file://$PROJECT_DIR$/eventbus" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gatewayconsul" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipkinserver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeperdiscovery" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zuul" charset="UTF-8" />
   </component>
 </project>

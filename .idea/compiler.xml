@@ -6,19 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="configclient" />
-        <module name="zuul" />
         <module name="eurekaclient" />
-        <module name="gatewayconsul" />
-        <module name="springcloud" />
-        <module name="gateway" />
-        <module name="eurekaserver" />
         <module name="eventbus" />
-        <module name="consulproducer (1)" />
         <module name="consulconsumer" />
-        <module name="eurekafeignclient" />
+        <module name="springcloud" />
         <module name="configcenter" />
+        <module name="gateway" />
+        <module name="zookeeperdiscovery" />
+        <module name="zuul" />
+        <module name="consulproducer (1)" />
+        <module name="configclient" />
+        <module name="zookeeper" />
         <module name="consulproducer" />
+        <module name="eurekaserver" />
+        <module name="gatewayconsul" />
+        <module name="eurekafeignclient" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -39,6 +41,8 @@
       <module name="gateway" options="-parameters" />
       <module name="gatewayconsul" options="-parameters" />
       <module name="zipkinserver" options="-parameters" />
+      <module name="zookeeper" options="-parameters" />
+      <module name="zookeeperdiscovery" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>

@@ -17,6 +17,8 @@
         <option value="$PROJECT_DIR$/consulconsumer/pom.xml" />
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/gatewayconsul/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeperdiscovery/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeper/pom.xml" />
       </list>
     </option>
   </component>
