@@ -9,6 +9,10 @@ public class HelloController {
     public  String hello() {
         return "hello world consul";
     }
+    @GetMapping("/fallback")
+    public String fallback(){
+        return "容断了";
+    }
 }
 
 

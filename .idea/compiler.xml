@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="gatewayconsul" />
         <module name="zuul" />
         <module name="eurekafeignclient" />
         <module name="consulconsumer" />
         <module name="eventbus" />
+        <module name="gateway" />
         <module name="consulproducer" />
         <module name="springcloud" />
         <module name="consulproducer (1)" />
@@ -34,6 +36,8 @@
       <module name="eurekafeignclient" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
       <module name="eventbus" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="gatewayconsul" options="-parameters" />
       <module name="zipkinserver" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>

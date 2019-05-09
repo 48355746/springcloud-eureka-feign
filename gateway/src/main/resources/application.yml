@@ -1,0 +1,53 @@
+spring:
+  redis:
+    host: 10.237.36.21
+    password:
+    port: 6379
+  profiles:
+    active: dev
+  application:
+    name: springcloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      #      filter:
+      #        remove-non-proxy-headers:
+      #          headers:
+      #          - dummy
+      routes:
+        - id: add_request_parameter_route
+          # 重点！/info必须使用http进行转发，lb代表从注册中心获取服务
+          uri: lb://service-producer
+          # 重点！转发该路径！,/userapi/**,
+          filters:
+            - name: Hystrix
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/fallback
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 1
+                redis-rate-limiter.burstCapacity: 2
+                key-resolver: "#{@userKeyResolver}"
+          predicates:
+            - Method=GET
+              # - id: apiuser
+              # 重点！/info必须使用http进行转发，lb代表从注册中心获取服务
+              # uri: lb://ANGELCLOUD-PROVIDER-USER
+            # 重点！转发该路径！,/userapi/**,
+          # predicates:
+          # - Path=/ANGELCLOUD-PROVIDER-USER/**
+    consul:
+      host: localhost
+      port: 8500
+      healthCheckInterval: 15s
+
+server:
+  port: 8091
+
+# eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
